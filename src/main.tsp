@@ -74,5 +74,5 @@ import "./wolf/08..hc.tsp";
 import "./wolf/50..mc.tsp";
 import "./wolf/broadcast.tsp";
 import "./kromschroeder/08..hc.tsp";
-import "./kromschroeder/50..mc.tsp";
+import "./kromschroeder/f6..sc.tsp";
 import "./kromschroeder/broadcast.tsp";
