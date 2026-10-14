@@ -29,6 +29,9 @@ scalar hours extends UIN;
 @unit("U/sec")
 scalar speed extends UIN;
 
+/** Status 0x500A-Broadcast */
+scalar Status extends UCH;
+
 /** Betriebsphase */
 @values(Values_Operatingphase)
 scalar operatingphase extends UCH;

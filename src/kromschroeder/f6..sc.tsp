@@ -24,7 +24,7 @@ model b {
 @passive 
 @id(0x50, 0xa)
 model Act {
-  Status1: operatingphase,
+  Status1: Status,
   /** Betriebsphase */
   Operatingphase: opdataheat,
   Ukn2_1:     BI0,
@@ -41,7 +41,26 @@ model Act {
   Ukn3_3:     BI2,
   Ukn3_4:     BI3,
   Ukn3_5:     BI4,
-  Ukn3_6:     BI5,
+  Ukn3_6:     BI5, 
+  Ukn3_7:     BI6,
+  /** 0=Heating;1=DHW */   
+  SettingUV:      BI7,
+  /** Laststellung */
+  Load:           UCH,
+  /** Vorlauftemperatur */
+  SupplyTemp:     temp1,
+  /** Abgastemperatur */
+  FlueGasTemp:    temp1,
+  /** Warmwassertemperatur */
+  DHWTemp:        temp1,
+  /** Unbekannte Temperatur */
+  UknTemp:        temp1,
+  /** Außentemperatur */
+  ExternalTemp:   outsidetemp,
+  /** Temperaturtrend */
+  TrendTemp:      temp2,
+  /** Vorlauf Solltemperatur */
+  SupplySetTemp:  temp0
 }
 
 enum Values_SoWi {
